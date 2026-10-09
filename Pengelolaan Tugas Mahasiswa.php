@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -491,44 +490,6 @@ $selesai = count(
     </tr>
     <?php endforeach; ?>
 </table>
-
-<hr>
-
-<h2>Stack (LIFO)</h2>
-
-<p>
-Stack menyimpan riwayat perubahan status.
-LIFO berarti data terakhir masuk akan keluar pertama.
-</p>
-
-<p>Jumlah riwayat: <?= count($_SESSION['stack']) ?></p>
-
-<form method="post">
-    <button name="aksi" value="undo">
-        Batalkan Status Terakhir
-    </button>
-</form>
-
-<hr>
-
-<h2>Queue (FIFO)</h2>
-
-<p>
-Queue adalah antrean. FIFO berarti data pertama masuk
-akan diproses pertama.
-</p>
-
-<form method="post">
-    <input type="text" name="item" placeholder="Nama item antrean">
-
-    <button name="aksi" value="enqueue">
-        Tambah Antrean
-    </button>
-
-    <button name="aksi" value="dequeue">
-        Proses Antrean
-    </button>
-</form>
 
 <ol>
     <?php foreach ($_SESSION['queue'] as $item): ?>
