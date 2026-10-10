@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-/*
- * Aplikasi Pengelolaan Tugas Mahasiswa
- * Bahasa: PHP dan HTML
- * Algoritma: Sorting, Searching, Stack, Queue, Profiling
- */
-
 if (!isset($_SESSION['tasks'])) {
     $_SESSION['tasks'] = [
         [
@@ -338,19 +332,15 @@ $selesai = count(
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>TaskMate</title>
+    <title>Aplikasi Pengelolaan Tugas Mahasiswa</title>
 </head>
 <body>
 
-<h1>Aplikasi Pengelolaan Tugas Mahasigma</h1>
+<h1>Aplikasi Pengelolaan Tugas Mahasiswa</h1>
 
 <hr>
 
-<?php if ($pesan !== ''): ?>
-    <p><strong><?= aman($pesan) ?></strong></p>
-<?php endif; ?>
-
-<h2>Dashboard</h2>
+<h2>Keterangan</h2>
 
 <p>Total tugas: <?= $total ?></p>
 <p>Tugas selesai: <?= $selesai ?></p>
@@ -383,7 +373,7 @@ $selesai = count(
 
 <hr>
 
-<h2>Sorting (Pengurutan)</h2>
+<h2>Urutkan Tugas</h2>
 
 <form method="post">
     <input type="hidden" name="aksi" value="urutkan">
@@ -406,7 +396,7 @@ $selesai = count(
 
 <hr>
 
-<h2>Searching (Pencarian)</h2>
+<h2>Cari Tugas</h2>
 
 <form method="post">
     <input type="hidden" name="aksi" value="cari">
