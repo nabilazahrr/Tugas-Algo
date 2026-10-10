@@ -342,7 +342,7 @@ $selesai = count(
 </head>
 <body>
 
-<h1>Aplikasi Pengelolaan Tugas Mahasigma</h1>
+<h1>Aplikasi Pengelolaan Tugas Mahasiswa</h1>
 
 <hr>
 
