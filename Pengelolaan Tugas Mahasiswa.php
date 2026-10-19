@@ -404,14 +404,14 @@ $selesai = count(
     <input
         type="text"
         name="kata_cari"
-        placeholder="Judul tugas"
+        placeholder="Judul Tugas / Mata Kuliah"
         value="<?= aman($kata) ?>"
         required
     >
 
     <select name="metode_cari">
-        <option value="linear">Linear Search</option>
-        <option value="binary">Binary Search</option>
+        <option value="linear">Judul Tugas</option>
+        <option value="binary">Mata Kuliah</option>
     </select>
 
     <button type="submit">Cari</button>
